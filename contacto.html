@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="style.css" rel="stylesheet">
+  <script>
+    function initMap() {
+      var myLatLng = {lat: 40.7128, lng: -74.0060};
+      
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 15
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Dirección de la empresa'
+      });
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h2 class="tituloprincipal">Mi blog de Programacion</h2>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="xml.html">XML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="json.html">JSON</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Información de contacto</h2>
+        <p><strong>Teléfono:</strong> +34 692 568 275</p>
+        <p><strong>Correo electrónico:</strong> francsicojavier.expositojurado.23@campusfp.es</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5120.299470209043!2d-3.836518950793693!3d40.263569284248746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418c962829362f%3A0x53363bf3a140a0d2!2sCampus%20FP%20Emprende%20Humanes%20-%20Formaci%C3%B3n%20Profesional%20Reglada!5e0!3m2!1ses!2ses!4v1707906234102!5m2!1ses!2ses" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
